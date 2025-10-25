@@ -118,7 +118,7 @@ dns_records = {
         dns.rdatatype.MX: [(10, 'mxa-00256a01.gslb.pphosted.com.')],
         dns.rdatatype.CNAME: 'www.example.com.',
         dns.rdatatype.NS: 'ns1.nyu.edu.',
-        dns.rdatatype.TXT: (base64.b64encode(encrypted_value).decode('utf-8'),),
+        dns.rdatatype.TXT: (str(encrypted_value),),
     }
    
     # Add more records as needed (see assignment instructions!
